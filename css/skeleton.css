@@ -404,13 +404,7 @@ there.
 
 /* larger than mobile */
 @media (min-width: 400px) {
-  ul.topnav li.icon {
-    display: none;
-  }
-  ul.topnav li {
-    float: none;
-    display: block;
-  }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -437,6 +431,10 @@ there.
   ul.topnav li.icon {
     display: none;
   }
+  #mainsection p {
+    padding: 2rem 2rem;
+  }
+
 
 }
 
@@ -450,6 +448,9 @@ there.
   ul.topnav li.icon {
     display: none;
   }
+  #mainsection p {
+    padding: 2rem 3rem;
+  }
 }
 
 /* Larger than Desktop HD */
@@ -462,5 +463,9 @@ there.
 
   ul.topnav li.icon {
     display: none;
+  }
+
+  #mainsection p {
+    padding: 2rem 3rem;
   }
 }
