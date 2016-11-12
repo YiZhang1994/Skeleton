@@ -502,21 +502,8 @@ ul.topnav li a:hover {
   color: #0FA0CE;
 }
 
-#mainsection {
-  text-align: center;
-  padding: 5rem 5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 2rem;
-}
-
-#mainsection p {
-  padding: 2rem 0;
-  text-align: left;
-}
-
 #detailsection {
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding-top: 3rem;
   border-top: solid thin gainsboro;
 
@@ -556,10 +543,6 @@ ul.topnav li a:hover {
   margin-top: 2rem;
 }
 
-
-
-
-
 #detailsection th {
   text-align: center;
   background-color: #33C3F0;
@@ -573,10 +556,69 @@ ul.topnav li a:hover {
   border-radius: 5px;
 }
 
+.additionalInfo {
+	text-align:left;
+	margin-bottom:2rem;
+	margin-left:1rem;
+}
 
 
+#infoBox {
+    margin-top:2em;
+	margin-bottom:2em;
+    padding:2rem;
+}
+
+#infoBox h2 {
+	text-align:center;
+    padding: 0.5rem 0;
+    border-radius: inherit;
+}
+
+form {
+	border-style: solid;
+    border-width: thin;
+    border-color: #bbbbbb;
+    border-radius: 4px;
+    padding:2rem;
+	margin-top:2rem;
+}
 
 
+/*embedded iframe*/
+.embed {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-top:1rem;
+}
+.embed object,
+.embed iframe,
+.embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.backgroundWrapper {
+
+  background: url('../images/gondollas_opaque.png') no-repeat fixed center / cover;
+  padding:1rem;
+
+}
+
+.opaque {
+background-color:rgba(255,255,255,.7);
+}
+
+.minHeight {
+	min-height:20em;
+}
+	
 /*slider css*/
 .slider {
   width: 100%;

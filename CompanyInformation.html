@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Company Information</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<header id="header"><h1>Venice Tours</h1></header>
+
+<div id="navbarAnchor"></div>
+<div class="navbar">
+    <ul class="topnav" id="myTopnav">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="VeniceTours.html">Venice Tours</a>
+        </li>
+        <li>
+            <a href="CustomerReviews.html">Customer Reviews</a>
+        </li>
+        <li>
+            <a href="AdditionalInfo.html">Additional Info</a>
+        </li>
+        <li>
+            <a href="CompanyInformation.html">Company Information</a>
+        </li>
+        <li class="icon">
+            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="backgroundWrapper">
+	<div class="container opaque">
+	  <div id="mainsection">
+	  <div class="row">
+		  <div class="one-half column">
+			<h2>Company information</h2>
+				<h3>Address</h3>
+					<address>
+					Italia Walks and Tours <br />
+					Giudecca 15 <br />
+					30446 Venice <br />
+					Italy <br />
+					</address>
+				<a href="#contactform"><button class="button-primary">Contact us</button></a>
+				<address>
+				Tel: <a href="tel:00390415577744898">+39 041 557 7744898</a> <br />
+				Fax: +39 041 557 3930457 <br />
+				eMail: <a href="mailto:info@Italia-walks.st-andrews.it">info@Italia-walks.st-andrews.it</a> <br />
+				URL: host.username
+				</address>
+		  </div>
+		  <div class="one-half column">
+			  <div class="embed">
+				  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7376402863747!2d12.102407414893829!3d45.495227739394664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ecbdbbda69409%3A0xe403dcdea5195eef!2sVia+Giudecca%2C+15%2C+30035+Mirano+VE%2C+Italy!5e0!3m2!1sen!2suk!4v1478980204356"></iframe>
+			  </div>
+		  </div> 
+	  </div>
+	</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+	<a name="contactform"></a>
+		<form>
+		  <h2>Contact us</h2>
+		  <div class="row">
+			<div class="four columns">
+			  <label for="EmailInput">Your email</label>
+			  <input class="u-full-width" placeholder="example@mailbox.com" id="exampleEmailInput" type="email" required>
+			</div>
+			<div class="four columns">
+			  <label for="PhoneNumberInput">Phone number</label>
+			  <input class="u-full-width" type="tel">
+			</div>
+			<div class="four columns">
+			  <label for="RecipientInput">Reason for contacting</label>
+			  <select class="u-full-width" id="exampleRecipientInput">
+				<option value="Option 1">Inquiry</option>
+				<option value="Option 2">Tour booking</option>
+			  </select>
+			</div>
+		  </div>
+		  <label for="exampleMessage">Message</label>
+		  <textarea class="u-full-width" id="exampleMessage" required></textarea>
+		  <label class="example-send-yourself-copy">
+			<input type="checkbox">
+			<span class="label-body">I prefer to be contacted by email only</span>
+		  </label>
+		  <input class="button-primary" value="Submit" type="submit">
+		</form>
+	</div>
+
+
+
+<div class="copyright">
+        <footer>
+            <p>&copy; Italia Tours Ltd. (for itself and on behalf of its corporate group) 2008-2016. All rights reserved. All copyright and other intellectual property rights in all logos, designs, text, images and other materials 
+		on this website are owned by Italia Tours Ltd. and/or its group companies or appear with permission of the relevant owner (including ITAB).</p>
+         </footer>
+    </div>
+</div>
+
+
+
+<!--------------------script-------------------------->
+<script style='text/javascript'>
+    $(document).ready(function() {
+        // Cache selectors for faster performance.
+        var $window = $(window),
+                $mainMenuBar = $(".navbar"),
+                $mainMenuBarAnchor = $("#navbarAnchor");
+
+        // Run this on scroll events.
+        //scroll()
+        $window.scroll(function() {
+            //scrollTop()
+            var window_top = $window.scrollTop();
+            //javascript uses offsetTop();jquery uses offset().top;
+            var div_top = $mainMenuBarAnchor.offset().top;
+            if (window_top > div_top) {
+                // Make the div sticky.
+                $mainMenuBar.addClass("navfixed");
+                $mainMenuBarAnchor.height($mainMenuBar.height());
+            }
+            else {
+                // Unstick the div.
+                $mainMenuBar.removeClass('navfixed');
+                $mainMenuBarAnchor.height(0);
+            }
+        });
+    });
+
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
