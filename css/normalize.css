@@ -429,68 +429,88 @@ th {
 
 /*==============customize ==================*/
 
-/*.navbar ul {
-  list-style-type: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  padding-top: 0.5rem;
-  padding-left: 5rem;
-  margin-bottom: 1rem;
-  background-color: black;
-  width: 100%;
-  z-index: 1;
+#header {
+  padding: 0 0 0 3rem;
+  height: 2.5rem;
+}
 
-}*/
-
-/*.navbar li {
-  float: none;
-  padding: 0.5rem 1.5rem;
-}*/
-
+#header h5 {
+  font-weight: bold;
+}
 
 .navbar {
-    display: block;
-    width: 100%;
-    height: 6.5rem;
-    background: #fff;
-    z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-	text-align:center;
-	}
+  text-align: center;
+  background: white;
+  z-index: 99;
+  border-bottom: solid thin gainsboro;
 
+
+}
+
+.navfixed {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
 
 .navbar ul {
-	list-style:none;
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  padding-top: 0.5rem;
 }
 
-.navbar a {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    margin-right: 35px;
-    text-decoration: none;
-    line-height: 6.5rem;
-    color: #222;
+
+ul.topnav li {
+  display: none;
 }
 
-.navbar a.active {
-    color: #33C3F0; }
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
+  visibility: visible;
+}
 
-.main-section {
+ul.topnav.responsive {position: relative;}
+ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ul.topnav.responsive li {
+  float: none;
+  display: inline;
+}
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
+}
+
+
+
+.navbar li a {
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  margin-top: 6rem;
-  padding: 5em 5em;
+  font-weight: bold;
+  color: #222;
+  padding: 0rem 1.5rem;
 }
 
-.main-section p {
-  padding: 2rem 0;
+#mainsection {
   text-align: center;
+  padding: 5rem 5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.three.columns {
+#mainsection p {
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.one-half.column {
   border-style: solid;
   border-width: thin;
   border-color: #bbbbbb;
@@ -515,10 +535,31 @@ th {
 }
 
 .copyright {
-  width: 100%;
   text-align: center;
-  background-color: black;
-  color: white;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  margin-top: 2rem;
 }
+
+
+
+
+
+/*slider css*/
+.slider {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  z-index: -1;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+/***********/

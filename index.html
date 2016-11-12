@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs comment and another comment
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Venice Tours</title>
@@ -21,10 +21,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -32,106 +37,140 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="container">
-  <section class="main-section">
 
-      <h2>Tours, Sightseeing and Things to do.</h2>
-      <p>First time in Venice? You'll see all the highlights of this magical city in our combined walking and boat tour.
-        Plus, you'll skip the long lines at St. Mark's Basilica - don't waste time queuing when you're on vacation!</p>
-      <button class="button-primary">Learn more about Venice Tours</button>
+  <header id="header"><h5>Venice Tours</h5></header>
 
-  </section>
-  </div>
-  <div class="container">
-    <div class="navbar">
-		  <ul>
-		  <li>
-			<a href="index.html">HOME</a>
-		  </li>
-		  <li>
-			<a href="VeniceTours.html">VENICE TOURS</a>
-		  </li>
-		  <li>
-			<a href="#">CUSTOMER REVIEWS</a>
-		  </li>
-		  <li>
-			<a href="#">ADDITIONAL INFO</a>
-		  </li>
-		  <li>
-			<a href="#">COMPANY INFORMATION</a>
-		  </li>
-		</ul>
-		</div>
-	</div>
-  <div class="container">
-    <section class="main-section">
-        <h2>Tours</h2>
-        <h5>Venice Tours include small group Walking Tours, Day Tours & Boat Tours by the Original Italia Walking Tour Company.</h5>
-        <p>Our selection of Venice Tours also includes Private Walking Tours and Private Boat Tours.
-            All our Venice Tours are led by expert tour guides and include skip the queue tickets for the must-see sights of Venice.
-            Our Venice Tours also include Day Tours from Venice to the mainland on our popular small group Hill Towns of Veneto Day Trip,
-            our small group Dolomites Day Trip, as well as Private Venice Day Tours to celebrated wine regions and the world-famous Palladian Villas.
-        </p>
-        <button class="button-primary"> Learn more about the Tours </button>
-    </section>
-    <div class="row">
-        <div class="three columns">
-            <h6>Walking Tour</h6>
-            <p><img src="images/mask.jpg">
-            </p>
-            <p>Our Venice Tours also include Day Tours from Venice to the mainland on our popular small group Hill Towns of Veneto Day Trip,
-                our small group Dolomites Day Trip, as well as Private Venice Day Tours to celebrated wine regions and the world-famous Palladian Villas.
-            </p>
-            <button class="button-primary"> See Details</button>
-        </div>
-        <div class="three columns">
-            <h6>Boat Tour</h6>
-            <p><img src="images/boat.jpg">
-            </p>
-                <p>Boat trips include Murano. It is believed that glassmaking in Murano originated in 9th century Rome, with
-                    significant Asian influences, as Venice was a major trading port. Muranos reputation as a center for
-                    glassmaking was born when the Venetian Republic, fearing fire and destruction of the city's mostly wooden buildings,
-                    ordered glassmakers to move their foundries to Murano in 1291. Murano glass is still interwoven with Venetian glass.
-                </p>
-                <p>
-                    There is also a trip to Burano. The ancient art of lace-making has been passed down from generation to generation through the skilled hands of the Burano lace-makers,
-                    right up to the present day. Our Program of Venice Tours offers the widest selection & best value in Venice Tours on-line.
-                </p>
-                <button class="button-primary"> See Details</button>
-        </div>
-        <div class="three columns">
-            <h6>The Grand Canal</h6>
-            <p><img src="images/canal.jpg">
-            </p>
-            <p>Our Grand Canal Boat Tour is quite simply a breathtaking experience of Venice. In the first part of the tour cruise down the Grand Canal at a relaxed pace with photo opportunities,
-                as your guide introduces you to the splendid Palaces, Churches, Bridges and other Monumental buildings that line the main waterway.
-                Learn the history and evolution of the main street of Venice, and be entertained by anecdotes about the famous and infamous people that once lived along this celebrated waterway.
-            </p>
-            <button class="button-primary"> See Details</button>
-        </div>
-        <div class="three columns">
-            <h6>St. Mark's Basilica</h6>
-            <p><img src="images/stmarks.jpg">
-            </p>
-            <p>St Mark's Basilica (Basilica di San Marco) is the most famous of the many churches of Venice and an exampleof Byzantine architecture in the world. Located just off the Grand Canal,
-                the gleaming basilica overlooks the Piazza San Marco (St. Mark's Square) and adjoins the Doge's Palace.
-                Skip the queue and visit this masterpiece.San Marco is a cathedral,it was the Doge's chapel until it became the seat of the Archbishop of Venice in 1807.
-            </p>
-            <p>We have additional tours for Rome and Tuscany. Let us inspire your next holiday destination,
-                have a look through our photo gallery generated by our customers.
-            </p>
-            <button class="button-primary"> See Details</button>
-        </div>
-    </div>
-</div>
-  <div class="copyright">
-    <footer>
-        <p>Copyright &copy; Italia Tours Ltd.</p>
-    </footer>
+  <div id="navbarAnchor"></div>
+  <div class="navbar">
+      <ul class="topnav" id="myTopnav">
+          <li>
+              <a href="index.html">HOME</a>
+          </li>
+          <li>
+              <a href="VeniceTours.html">VENICE TOURS</a>
+          </li>
+          <li>
+              <a href="#">CUSTOMER REVIEWS</a>
+          </li>
+          <li>
+              <a href="#">ADDITIONAL INFO</a>
+          </li>
+          <li>
+              <a href="#">COMPANY INFORMATION</a>
+          </li>
+          <li class="icon">
+              <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+          </li>
+      </ul>
+
   </div>
 
 
 
+  <div class="container">
+
+      <div class="slider">
+          <div><img src="images/Jar_burano_4_houses.jpg"></div>
+          <div><img src="images/canals-of-venice-at-dusk.jpg"></div>
+          <div><img src="images/looking-at-the-grand-canal-of-venice-in-modern-times.jpg"></div>
+          <div><img src="images/boat.jpg"></div>
+      </div>
+
+      <div id="mainsection">
+          <article>
+              <h2>Tours, Sightseeing and Things to do.</h2>
+              <p>First time in Venice? You'll see all the highlights of this magical city in our combined walking and boat tour.
+                  Plus, you'll skip the long lines at St. Mark's Basilica - don't waste time queuing when you're on vacation!</p>
+          </article>
+
+          <button class="button-primary">Learn more about Venice Tours</button>
+
+      </div>
+
+      <div class="row">
+        <div class="three columns">Trusted English Speaking Guides</div>
+          <div class="three columns">Top Attractions</div>
+          <div class="three columns">Top Tours</div>
+          <div class="three columns">Book Online and save 25%</div>
+      </div>
+
+
+
+
+
+
+      <!-- footer bar-->
+      <div class="copyright">
+          <footer>
+              <p>Copyright &copy; Italian Tours Ltd.</p>
+          </footer>
+      </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.slider').slick({
+              dots: true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              adaptiveHeight: true,
+              autoplay: true,
+            autoplaySpeed:3000
+      });
+      });
+
+  </script>
+
+
+  <script style='text/javascript'>
+      $(document).ready(function() {
+          // Cache selectors for faster performance.
+          var $window = $(window),
+                  $mainMenuBar = $(".navbar"),
+                  $mainMenuBarAnchor = $("#navbarAnchor");
+
+          // Run this on scroll events.
+          //scroll()
+          //当用户滚动指定的元素时，会发生scroll事件。
+          //scroll事件适用于所有可滚动的元素和window对象（浏览器窗口）
+          //scroll()方法触发scroll事件，或规定当发生scroll事件时运行的函数
+          $window.scroll(function() {
+              //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
+              var window_top = $window.scrollTop();
+              //javascript用offsetTop();jquery用offset().top;
+              var div_top = $mainMenuBarAnchor.offset().top;
+              if (window_top > div_top) {
+                  // Make the div sticky.
+                  $mainMenuBar.addClass("navfixed");
+                  $mainMenuBarAnchor.height($mainMenuBar.height());
+              }
+              else {
+                  // Unstick the div.
+                  $mainMenuBar.removeClass('navfixed');
+                  $mainMenuBarAnchor.height(0);
+              }
+          });
+      });
+
+  </script>
+
+  <script>
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
