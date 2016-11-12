@@ -26,6 +26,8 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -33,64 +35,60 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
+<header id="header"><h5>Venice Tours</h5></header>
+
+<div id="navbarAnchor"></div>
 <div class="navbar">
-    <ul>
+    <ul class="topnav" id="myTopnav">
         <li>
-            <a href="index.html">HOME</a>
+            <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="VeniceTours.html">VENICE TOURS</a>
+            <a href="VeniceTours.html">Venice Tours</a>
         </li>
         <li>
-            <a href="#">CUSTOMER REVIEWS</a>
+            <a href="CustomerReviews.html">Customer Reviews</a>
         </li>
         <li>
-            <a href="#">ADDITIONAL INFO</a>
+            <a href="#">Additional Info</a>
         </li>
         <li>
-            <a href="#">COMPANY INFORMATION</a>
+            <a href="#">Company Information</a>
+        </li>
+        <li class="icon">
+            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
         </li>
     </ul>
+
 </div>
 
 
 <div class="container">
-    <section class="main-section">
-        <h2>Tours</h2>
-        <h5>Venice Tours include small group Walking Tours, Day Tours & Boat Tours by the Original Italia Walking Tour Company.</h5>
-        <p>Our selection of Venice Tours also includes Private Walking Tours and Private Boat Tours.
+    <div id="mainsection">
+        <article>
+            <h2>Tours</h2>
+            <h5>Venice Tours include small group Walking Tours, Day Tours & Boat Tours by the Original Italia Walking Tour Company.</h5>
+            <p>Our selection of Venice Tours also includes Private Walking Tours and Private Boat Tours.
             All our Venice Tours are led by expert tour guides and include skip the queue tickets for the must-see sights of Venice.
             Our Venice Tours also include Day Tours from Venice to the mainland on our popular small group Hill Towns of Veneto Day Trip,
             our small group Dolomites Day Trip, as well as Private Venice Day Tours to celebrated wine regions and the world-famous Palladian Villas.
-        </p>
-        <button class="button-primary"> Learn more about the Tours </button>
-    </section>
-    <div class="row">
-        <div class="three columns">
+            </p>
+        </article>
+        <a href="#detail"><button class="button-primary"> Learn more about the Tours </button></a>
+    </div>
+
+    <a name="detail"></a>
+    <div id="detailsection">
+        <div class="row">
+            <div class="one-half column">
             <h6>Walking Tour</h6>
             <p><img src="images/mask.jpg">
             </p>
             <p>Our Venice Tours also include Day Tours from Venice to the mainland on our popular small group Hill Towns of Veneto Day Trip,
                 our small group Dolomites Day Trip, as well as Private Venice Day Tours to celebrated wine regions and the world-famous Palladian Villas.
             </p>
-            <button class="button-primary"> See Details</button>
         </div>
-        <div class="three columns">
-            <h6>Boat Tour</h6>
-            <p><img src="images/boat.jpg">
-            </p>
-                <p>Boat trips include Murano. It is believed that glassmaking in Murano originated in 9th century Rome, with
-                    significant Asian influences, as Venice was a major trading port. Muranos reputation as a center for
-                    glassmaking was born when the Venetian Republic, fearing fire and destruction of the city's mostly wooden buildings,
-                    ordered glassmakers to move their foundries to Murano in 1291. Murano glass is still interwoven with Venetian glass.
-                </p>
-                <p>
-                    There is also a trip to Burano. The ancient art of lace-making has been passed down from generation to generation through the skilled hands of the Burano lace-makers,
-                    right up to the present day. Our Program of Venice Tours offers the widest selection & best value in Venice Tours on-line.
-                </p>
-                <button class="button-primary"> See Details</button>
-        </div>
-        <div class="three columns">
+            <div class="one-half column">
             <h6>The Grand Canal</h6>
             <p><img src="images/canal.jpg">
             </p>
@@ -98,29 +96,88 @@
                 as your guide introduces you to the splendid Palaces, Churches, Bridges and other Monumental buildings that line the main waterway.
                 Learn the history and evolution of the main street of Venice, and be entertained by anecdotes about the famous and infamous people that once lived along this celebrated waterway.
             </p>
-            <button class="button-primary"> See Details</button>
         </div>
-        <div class="three columns">
-            <h6>St. Mark's Basilica</h6>
-            <p><img src="images/stmarks.jpg">
-            </p>
-            <p>St Mark's Basilica (Basilica di San Marco) is the most famous of the many churches of Venice and an exampleof Byzantine architecture in the world. Located just off the Grand Canal,
+        </div>
+        <div class="row">
+            <div class="one-half column">
+
+                <h6>Boat Tour</h6>
+                <p><img src="images/boat.jpg">
+                </p>
+                <p>Boat trips include Murano. It is believed that glassmaking in Murano originated in 9th century Rome, with
+                    significant Asian influences, as Venice was a major trading port. Muranos reputation as a center for
+                    glassmaking was born when the Venetian Republic, fearing fire and destruction of the city's mostly wooden buildings,
+                    ordered glassmakers to move their foundries to Murano in 1291. Murano glass is still interwoven with Venetian glass.
+                    <br>
+                    There is also a trip to Burano. The ancient art of lace-making has been passed down from generation to generation through the skilled hands of the Burano lace-makers,
+                    right up to the present day. Our Program of Venice Tours offers the widest selection & best value in Venice Tours on-line.
+                </p>
+            </div>
+            <div class="one-half column">
+                <h6>St. Mark's Basilica</h6>
+                <p><img src="images/stmarks.jpg">
+                </p>
+                <p>St Mark's Basilica (Basilica di San Marco) is the most famous of the many churches of Venice and an exampleof Byzantine architecture in the world. Located just off the Grand Canal,
                 the gleaming basilica overlooks the Piazza San Marco (St. Mark's Square) and adjoins the Doge's Palace.
                 Skip the queue and visit this masterpiece.San Marco is a cathedral,it was the Doge's chapel until it became the seat of the Archbishop of Venice in 1807.
-            </p>
-            <p>We have additional tours for Rome and Tuscany. Let us inspire your next holiday destination,
+                    <br>We have additional tours for Rome and Tuscany. Let us inspire your next holiday destination,
                 have a look through our photo gallery generated by our customers.
-            </p>
-            <button class="button-primary"> See Details</button>
+                </p>
+            </div>
         </div>
+    </div>
+
+
+
+    <div class="copyright">
+        <footer>
+            <p>Copyright &copy; Italia Tours Ltd.</p>
+         </footer>
     </div>
 </div>
 
-<div class="copyright">
-    <footer>
-        <p>Copyright &copy; Italia Tours Ltd.</p>
-    </footer>
-</div>
+
+
+<!--------------------script-------------------------->
+<script style='text/javascript'>
+    $(document).ready(function() {
+        // Cache selectors for faster performance.
+        var $window = $(window),
+                $mainMenuBar = $(".navbar"),
+                $mainMenuBarAnchor = $("#navbarAnchor");
+
+        // Run this on scroll events.
+        //scroll()
+        $window.scroll(function() {
+            //scrollTop()
+            var window_top = $window.scrollTop();
+            //javascript uses offsetTop();jquery uses offset().top;
+            var div_top = $mainMenuBarAnchor.offset().top;
+            if (window_top > div_top) {
+                // Make the div sticky.
+                $mainMenuBar.addClass("navfixed");
+                $mainMenuBarAnchor.height($mainMenuBar.height());
+            }
+            else {
+                // Unstick the div.
+                $mainMenuBar.removeClass('navfixed');
+                $mainMenuBarAnchor.height(0);
+            }
+        });
+    });
+
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

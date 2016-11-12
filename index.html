@@ -44,19 +44,19 @@
   <div class="navbar">
       <ul class="topnav" id="myTopnav">
           <li>
-              <a href="index.html">HOME</a>
+              <a href="index.html">Home</a>
           </li>
           <li>
-              <a href="VeniceTours.html">VENICE TOURS</a>
+              <a href="VeniceTours.html">Venice Tours</a>
           </li>
           <li>
-              <a href="#">CUSTOMER REVIEWS</a>
+              <a href="CustomerReviews.html">Customer Reviews</a>
           </li>
           <li>
-              <a href="#">ADDITIONAL INFO</a>
+              <a href="#">Additional Info</a>
           </li>
           <li>
-              <a href="#">COMPANY INFORMATION</a>
+              <a href="#">Company Information</a>
           </li>
           <li class="icon">
               <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
@@ -83,15 +83,14 @@
                   Plus, you'll skip the long lines at St. Mark's Basilica - don't waste time queuing when you're on vacation!</p>
           </article>
 
-          <button class="button-primary">Learn more about Venice Tours</button>
-
+          <a href="VeniceTours.html"><button class="button-primary">Learn more about Venice Tours</button></a>
       </div>
 
       <div class="row">
-        <div class="three columns">Trusted English Speaking Guides</div>
-          <div class="three columns">Top Attractions</div>
-          <div class="three columns">Top Tours</div>
-          <div class="three columns">Book Online and save 25%</div>
+        <div class="three columns"><footer>Trusted English Speaking Guides</footer></div>
+          <div class="three columns"><footer>Top Attractions</footer></div>
+          <div class="three columns"><footer>Top Tours</footer></div>
+          <div class="three columns"><footer>Book Online and save 25%</footer></div>
       </div>
 
 
@@ -108,7 +107,7 @@
   </div>
 
 
-
+  <!--------------------script-------------------------->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -138,13 +137,10 @@
 
           // Run this on scroll events.
           //scroll()
-          //当用户滚动指定的元素时，会发生scroll事件。
-          //scroll事件适用于所有可滚动的元素和window对象（浏览器窗口）
-          //scroll()方法触发scroll事件，或规定当发生scroll事件时运行的函数
           $window.scroll(function() {
-              //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
+              //scrollTop()
               var window_top = $window.scrollTop();
-              //javascript用offsetTop();jquery用offset().top;
+              //javascript uses offsetTop();jquery uses offset().top;
               var div_top = $mainMenuBarAnchor.offset().top;
               if (window_top > div_top) {
                   // Make the div sticky.
