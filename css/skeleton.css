@@ -444,13 +444,8 @@ footer {
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  ul.topnav li.icon {
-    display: none;
-  }
-  ul.topnav li {
-    float: none;
-    display: block;
-  }
+
+
 
 }
 
