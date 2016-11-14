@@ -75,7 +75,7 @@
 					30446 Venice <br />
 					Italy <br />
 					</address>
-				<a href="#contactform"><button class="button-primary">Contact us</button></a>
+				<button class="button-primary" onclick="window.location.href='#contactform'">Contact us</button>
 				<address>
 				Tel: <a href="tel:00390415577744898">+39 041 557 7744898</a> <br />
 				Fax: +39 041 557 3930457 <br />
@@ -99,15 +99,15 @@
 		  <h2>Contact us</h2>
 		  <div class="row">
 			<div class="four columns">
-			  <label for="EmailInput">Your email</label>
+			  <label for="exampleEmailInput">Your email</label>
 			  <input class="u-full-width" placeholder="example@mailbox.com" id="exampleEmailInput" type="email" required>
 			</div>
 			<div class="four columns">
 			  <label for="PhoneNumberInput">Phone number</label>
-			  <input class="u-full-width" type="tel">
+			  <input class="u-full-width" type="tel" id="PhoneNumberInput">
 			</div>
 			<div class="four columns">
-			  <label for="RecipientInput">Reason for contacting</label>
+			  <label for="exampleEmailInput">Reason for contacting</label>
 			  <select class="u-full-width" id="exampleRecipientInput">
 				<option value="Option 1">Inquiry</option>
 				<option value="Option 2">Tour booking</option>
@@ -123,6 +123,7 @@
 		  <input class="button-primary" value="Submit" type="submit">
 		</form>
 	</div>
+</div>
 
 
 
@@ -132,11 +133,11 @@
 		on this website are owned by Italia Tours Ltd. and/or its group companies or appear with permission of the relevant owner (including ITAB).</p>
          </footer>
     </div>
-</div>
 
 
 
-<!--------------------script-------------------------->
+
+	<!--script-->
 <script style='text/javascript'>
     $(document).ready(function() {
         // Cache selectors for faster performance.
