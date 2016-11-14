@@ -483,17 +483,5 @@ footer {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  ul.topnav li {
-    float: left;
-    display: initial;
-    visibility: visible;
-  }
 
-  ul.topnav li.icon {
-    display: none;
-  }
-
-  #mainsection p {
-    padding: 2rem 3rem;
-  }
 }
